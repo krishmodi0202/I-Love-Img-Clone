@@ -1,0 +1,89 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 50px;
+    padding: 0 20px;
+    background-color: #f0f8ff; /* Lightest blue background */
+    border-radius: 10px; /* Add some rounding for a modern look */
+  }
+  
+  .pricing-table {
+    box-shadow: 0px 0px 18px #ccc;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #fff; /* White background for contrast */
+    transition: all 0.3s ease;
+  }
+  
+  .pricing-table .head {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .pricing-table:hover .head {
+    border-bottom: 1px solid #0073e6; /* Blue border on hover */
+  }
+  
+  .pricing-table .head .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0073e6; /* Blue title */
+  }
+  
+  .pricing-table .content ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+  
+  .pricing-table .content ul li {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .pricing-table .sign-up {
+    background: linear-gradient(to right, #0073e6, #00bfff); /* Blue gradient background */
+    border-radius: 40px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .pricing-table .btn {
+    color: #fff;
+    padding: 14px 40px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s linear;
+    border: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: relative;
+    text-decoration: none;
+    border-radius: 50px;
+  }
+  
+  .pricing-table .btn:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
